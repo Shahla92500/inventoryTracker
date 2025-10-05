@@ -1,12 +1,13 @@
+
 export class Product {
-     sku: string;
+    sku: string;
     name: string;
     price: number;
 
     constructor(sku: string, name: string, price: number) {
-    this.sku = sku;
-    this.name = name;
-    this.price = price;
+        this.sku = sku;
+        this.name = name;
+        this.price = price;
     }
 
     displayDetails(): string {
@@ -20,4 +21,10 @@ export class Product {
     set setPrice(newBasePrice: number) {
     this.price = newBasePrice;
     }
+    // calculateDiscount (discount:number):number{
+    //     return this.price * discount;
+    // }
 }
+
+
+
